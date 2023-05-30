@@ -1,0 +1,117 @@
+//-------- Styles --------
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap");
+
+.display-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  .display-flex();
+  height: 100vh;
+  background-color: #d5d4d4;
+}
+
+.slider-container {
+  width: 160px;
+  height: 600px;
+  position: relative;
+  background-color: white;
+  border: 1px solid rgba(67, 67, 67, 0.455);
+}
+.cross {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: rgb(53, 53, 53);
+  font-size: 10px;
+}
+.cross:hover {
+  cursor: pointer;
+  color: rgb(38, 38, 38);
+  transition: 0.5s ease-in-out;
+}
+.logo-container {
+  width: 90%;
+}
+.logo {
+  padding: 0px 10px 20px 10px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.lines {
+  position: absolute;
+  bottom: 0px;
+  left: 5px;
+  color: gray;
+  font-size: 15px;
+}
+
+.offert {
+  height: 100%;
+  display: none;
+}
+
+.offert.active {
+  display: block;
+}
+
+.offert-slider {
+  font-family: "Roboto", sans-serif;
+  height: calc(600px - 55px);
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(67, 67, 67, 0.192);
+}
+.button {
+  .display-flex();
+  color: #ffffff;
+  width: 100px;
+  height: 30px;
+  background-color: #e93131;
+  margin: auto;
+  margin-top: 10px;
+  outline: 0px;
+  border: 0px;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #ff0f0f;
+  transition: 0.5s ease-in-out;
+}
+
+.img {
+  margin: auto;
+  width: 100%;
+  padding: 25px 5px 0px 5px;
+  max-height: 100%;
+}
+.name {
+  .display-flex();
+  font-weight: 100;
+  font-size: 15px;
+  padding: 0px 5px 0px 5px;
+  text-justify: auto;
+  text-align: center;
+}
+.price {
+  .display-flex();
+  font-weight: bolder;
+}
+
+.offert-element {
+  user-select: none;
+  display: grid;
+  height: 100%;
+  grid-template-rows: 40% 40% 10% 10%;
+}
