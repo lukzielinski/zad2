@@ -1,6 +1,6 @@
 let counter = 0;
 
-fetch("data.json")
+fetch("./data.json")
   .then((response) => response.json())
   .then((data) => {
     const randomOffers = getRandomElements(data.offers, 3);
@@ -11,7 +11,7 @@ fetch("data.json")
       counter++;
     });
   })
-  .catch((err) => console.log(err));
+  .catch((err) => console.log(err, "error try run local server"));
 
 function getRandomElements(array, count) {
   const shuffled = array.sort(() => Math.random() - 0.5);
